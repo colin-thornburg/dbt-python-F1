@@ -21,6 +21,20 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+snowflake_spend:
+  enabled: true
+
+dispatch:
+  - macro_namespace: dbt
+    search_order:
+      - snowflake_python_workshop
+      - dbt_snowflake_monitoring
+      - dbt
+
+query-comment:
+  comment: '{{ dbt_snowflake_monitoring.get_query_comment(node) }}'
+  append: true # Snowflake removes prefixed comments.
+
 models:
   snowflake_python_workshop:
     staging:
