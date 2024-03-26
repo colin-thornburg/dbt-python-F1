@@ -1,0 +1,17 @@
+name: "Enforce Branch Naming"
+on:
+  push:
+    branches-ignore:
+      - main
+      - master
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Branch Naming Convention
+        run: |
+          if [[ ! $GITHUB_REF =~ ^refs/heads/feature- ]]; then
+            echo "ERROR: Branch names must be prefixed with 'feature-'."
+            exit 1
+          fi
