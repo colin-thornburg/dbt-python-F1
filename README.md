@@ -74,3 +74,5 @@ Hope Watson &mdash; [LinkedIn](https://www.linkedin.com/in/hopewatson/)
 I want to give a massive thanks to [Eda Johnson](https://www.linkedin.com/in/eda-johnson-saa-csa-pmp-0a2783/) at Snowflake. She was immensely helpful and in the python models you can see where her proof of concept served as the workflow we iterated on in this project.
 
 Thanks to dbt Labs and my former manager and colleague, [Amy Chen](https://www.linkedin.com/in/yuanamychen/), for giving me the time to continue building skills and becoming technically more competent each day.
+
+test action
